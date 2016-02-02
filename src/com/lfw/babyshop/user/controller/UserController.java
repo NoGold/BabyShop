@@ -22,7 +22,11 @@ public class UserController {
 	public String demo(@PathVariable(value="id") Integer id) {
 		return "user/loginSuccess";
 	}*/
+	@RequestMapping("/")
+	public String index() {
+		return "index";
 
+	}
 	@RequestMapping("/home")
 	public String home() {
 		return "user/home";
